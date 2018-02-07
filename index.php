@@ -22,7 +22,7 @@ $sql =  "SELECT * FROM t_salles ";
 $reponse = $db->query($sql);
 echo "<select name='select'>";
 while ($donnees = $reponse->fetch(PDO::FETCH_ASSOC)){
-    echo "<option value='".$donnees['ID_SALLE'] . "'> ".$donnees['SALLENOM'] . "</option>";
+    echo "<option value='".$donnees['ID_SALLE'] . "'> ".$donnees['SALLENOM'] ." - " .$donnees['SALLEPLACE'] ." PLACES". "</option>";
 }
 echo "</select>";
 

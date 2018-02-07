@@ -20,8 +20,7 @@ if (isset($_POST['envoi'])){
         }
     }
     if (strtotime($dateReservation) < time()){
-        var_dump($dateReservation);
-        var_dump(time());
+
         echo "Veuillez entre une date valide s'il vous plait";
     }else {
         $sql = "SELECT * FROM t_reservations";
